@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+
+.app {
+  text-align: center;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+.square.winner {
+  background-color: #6aff6a; /* Change this to the color you prefer */
+  color: #000;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.center{
+  justify-content: space-between;
+  text-align: center;
+}
+/* App.css */
+
+.app.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ /* Use 100% of the viewport height */
+}
+
+/* Add the following styles to center the board */
+.board {
+  
+  text-align: center;
+}
+
+/* Add the following styles to center the controls */
+.controls {
+  
+  text-align: center;
+}
+
+/* Add the following styles to center the form */
+form {
+  margin-bottom: 20px;
+}
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
